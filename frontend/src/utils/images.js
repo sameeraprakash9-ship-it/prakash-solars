@@ -1,0 +1,1 @@
+export const solarPanelsImageUrl = 'https://static.vecteezy.com/system/resources/thumbnails/040/995/143/small/ai-generated-fields-of-solar-panels-and-systems-to-produce-green-electricity-ai-generated-photo.jpg';

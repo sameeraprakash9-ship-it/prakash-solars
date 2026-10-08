@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  color: #17233b;
+  background: #f5f3ed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.font-display {
+  font-family: 'Manrope', 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #e3dfd4;
+  border-radius: 0.9rem;
+  background: #fcfbf8;
+  padding: 0.85rem 1rem;
+  font-size: 0.875rem;
+  color: #17233b;
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.form-input::placeholder {
+  color: #9299a5;
+}
+
+.form-input:focus {
+  border-color: #bd8a2c;
+  background: white;
+  box-shadow: 0 0 0 4px rgb(189 138 44 / 14%);
+}
+
+.primary-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 0.9rem;
+  background: #93620a;
+  padding: 0.95rem 1.1rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.primary-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #765008;
+}
+
+.primary-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
